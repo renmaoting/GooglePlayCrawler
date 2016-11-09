@@ -1,1 +1,1 @@
-wellcom to star, fork, clone this repo. 
+wellcome to star, fork and/or clone this repo. 
