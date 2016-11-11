@@ -1,34 +1,40 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import scrapy
-#from scrapy.contrib.linkextractors import LinkExtractor
+from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
 from AppCrawler.items import AppCrawlerItem 
+
+from scrapy.spiders import Rule
+from scrapy.linkextractors.sgml import SgmlLinkExtractor
 
 class AppSpider(scrapy.Spider):
     name = "App"
 
     allowed_domains = ["play.google.com"]
-    #start_urls = ["https://play.google.com/store/apps"]
-    #start_urls = ["https://play.google.com/store/apps/details?id=com.supercell.clashroyale"]
-    start_urls = ["https://play.google.com/store/apps/details?id=com.john.plasmasky",
-            "https://play.google.com/store/apps/details?id=com.supercell.clashroyale"]
-    #rules = [Rule(LinkExtractor(allow=(r'apps',),deny=(r'reviewId')),follow=True,callback='parse_link')]
+    start_urls = [
+        'http://play.google.com/',
+        'https://play.google.com/store/apps/details?id=air.net.machinarium.Machinarium.GP'
+    ]
+
+    rules = [
+        Rule(LinkExtractor(allow=("https://play\.google\.com/store/apps/details", )), callback='parse',follow=True),
+    ]
 
     def parse(self, response):
-        sel = Selector(response)
+        if response.url.find('reviewId') != -1: 
+            return;
         item = AppCrawlerItem()
-#        item["Link"] = '' # n(titles.select('head/link[5]/@href').extract())
-        item["name"] = sel.xpath('//*[@class="document-title"]/div/text()').extract()
-        item["Price"] = sel.xpath('//*[@class="price buy id-track-click"]/span[2]/text()').extract()
-        item["Genre"] = sel.xpath('//*[@itemprop="genre"]/text()').extract()
-        item["Downloads"] = sel.xpath('//*[@itemprop="numDownloads"]/text()').extract()
-        item["Rating"] = sel.xpath('//*[@class="score"]/text()').extract()
-        item["Review_number"] = sel.xpath('//*[@class="reviews-num"]/text()').extract()
-        item["Updated"] = sel.xpath('//*[@itemprop="datePublished"]/text()').extract()
-        item["Version"] = sel.xpath('//*[@itemprop="softwareVersion"]/text()').extract()
-        item["Author"] = sel.xpath('//*[@itemprop="author"]/a/span/text()').extract()
+    
+        item["URL"] = response.url
+        item["Name"] = response.xpath('//div[@class="id-app-title"]/text()').extract()
+        item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract()
+        item["Updated"] = response.xpath("//div[@itemprop='datePublished']/text()").extract()
+        item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract()
+        item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract()
+        item["Rating"] = response.xpath("//div[@class='score']/text()").extract()
+        item["Author"] = response.xpath('//div[@itemprop="author"]/a/span/text()').extract()
+        item["Genre"] = response.xpath('//span[@itemprop="genre"]/text()').extract()
 
-        return item
-      
+        yield item
 

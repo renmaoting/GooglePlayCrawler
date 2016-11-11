@@ -8,15 +8,4 @@
 
 class AppcrawlerPipeline(object):
     def process_item(self, item, spider):
-        print "*******************************************************"
-#        print item['name'] 
-#        print item["Price"]
-#        print item["Genre"] 
-#        print item["Downloads"]
-#        print item["Rating"]
-#        print item["Review_number"]
-#        print item["Updated"] 
-#        print item["Author"]
-#        print item["Version"] 
-        print "*******************************************************"
         return item

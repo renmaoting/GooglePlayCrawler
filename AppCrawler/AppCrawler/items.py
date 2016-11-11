@@ -2,8 +2,8 @@
 import scrapy
 
 class AppCrawlerItem(scrapy.Item):
-    #Link = scrapy.Field()
-    name = scrapy.Field()
+    URL = scrapy.Field()
+    Name = scrapy.Field()
     Price = scrapy.Field()
     Genre = scrapy.Field()
     Downloads = scrapy.Field()

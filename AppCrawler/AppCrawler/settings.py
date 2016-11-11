@@ -14,7 +14,6 @@ BOT_NAME = 'AppCrawler'
 SPIDER_MODULES = ['AppCrawler.spiders']
 NEWSPIDER_MODULE = 'AppCrawler.spiders'
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'AppCrawler (+http://www.yourdomain.com)'
 
@@ -64,15 +63,16 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'AppCrawler.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'AppCrawler.pipelines.AppcrawlerPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY = 5
+DOWNLOAD_DELAY = 0.25
 # The maximum download delay to be set in case of high latencies
 #AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
