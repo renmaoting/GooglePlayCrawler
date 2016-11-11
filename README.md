@@ -3,4 +3,5 @@ This is a distributed App crawler, and it will grabs all the App informations fr
 App name, company, rating, price, size, type, release time, download number and so on.
 
 Use scrapy + redis + mongodb.
+usage: scrapy crawl App
 
