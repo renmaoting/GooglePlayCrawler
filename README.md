@@ -20,6 +20,7 @@ This MongoDB instance will store its data files in the /var/lib/mongodb and its 
 
 start mongodb:
   $ sudo service mongodb start
+  
   You can verify that if it has started successfully by checking the contents of the log file /var/log/mongodb/mongodb.log.
   
 stop mongodb:
@@ -29,9 +30,13 @@ restart mongodb:
   $ sudo service mongodb restart
   
 usage of mongodb:
+
   Among the tools included with the MongoDB package, is the mongo shell. You can connect to your MongoDB instance by issuing the following command at the system prompt:
+  
   $ mongo
   This will connect to the database running on the localhost interface by default. At the mongo prompt, issue the following two commands to insert a record in the “test” collection of the (default) “test” database.
+  
   > db.test.save( { a: 1 } )
+  
   > db.test.find()
 
