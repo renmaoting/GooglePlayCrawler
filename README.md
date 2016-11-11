@@ -4,3 +4,5 @@ App name, company, rating, price, size, type, release time, download number and 
 
 Use scrapy + redis + mongodb.
 
+usage: scrapy crawl App
+
