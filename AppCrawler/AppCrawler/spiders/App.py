@@ -2,26 +2,22 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.linkextractors import LinkExtractor
-from scrapy.selector import Selector
 from AppCrawler.items import AppCrawlerItem 
+from scrapy.spiders import Rule, CrawlSpider
 
-from scrapy.spiders import Rule
-from scrapy.linkextractors.sgml import SgmlLinkExtractor
-
-class AppSpider(scrapy.Spider):
+class AppSpider(CrawlSpider):
     name = "App"
-
     allowed_domains = ["play.google.com"]
     start_urls = [
         'http://play.google.com/',
         'https://play.google.com/store/apps/details?id=air.net.machinarium.Machinarium.GP'
     ]
 
-    rules = [
-        Rule(LinkExtractor(allow=("https://play\.google\.com/store/apps/details", )), callback='parse',follow=True),
-    ]
+    rules =( 
+        Rule(LinkExtractor(allow=("https://play\.google\.com/store/apps/details", )), callback = 'parse_item', follow = True),
+    )
 
-    def parse(self, response):
+    def parse_item(self, response):
         if response.url.find('reviewId') != -1: 
             return;
         item = AppCrawlerItem()
