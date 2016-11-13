@@ -1,0 +1,1496 @@
+2016-11-13 02:48:12 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.ubisoft.raymanadventures> (referer: https://play.google.com/store/apps/details?id=air.net.machinarium.Machinarium.GP)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:15 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.doublefine.thecave> (referer: https://play.google.com/store/apps/details?id=air.net.machinarium.Machinarium.GP)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:17 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.postudios.gk1> (referer: https://play.google.com/store/apps/details?id=uk.co.revolution.bs1dc)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:19 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.prettysimple.criminalcaseandroid> (referer: https://play.google.com/store/apps/details?id=com.frogmind.badland)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:31 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.royalapp.gandhi> (referer: https://play.google.com/store/apps/details?id=com.royalapp.killravan)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:34 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.funplus.familyfarm> (referer: https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftTOHM)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:38 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.mobapper.frula> (referer: https://play.google.com/store/apps/details?id=com.mobapper.filipinovegetarianrecipes)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:43 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.Reticulum.FamilyMemoryTrainer> (referer: https://play.google.com/store/apps/details?id=com.d954mas.game.MemoryTest.android)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:48:49 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.tw.snsplus.magicday.android> (referer: https://play.google.com/store/apps/details?id=air.com.A6fgame.newfjsgFTOLipad.android)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:07 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.applantation.android.maps.hongkong> (referer: https://play.google.com/store/apps/details?id=com.applantation.android.maps.srilanka)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:11 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=org.catrobat.catroid.createatschool> (referer: https://play.google.com/store/apps/details?id=org.catrobat.catroid)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:20 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.JogosAurora.LaserDefenseFree> (referer: https://play.google.com/store/apps/details?id=com.JogosAurora.DragonRings)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:24 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.ideal.weight.exercise.workout> (referer: https://play.google.com/store/apps/details?id=com.vegan.diet.plan.food.recipes)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:25 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.automattic.simplenote> (referer: https://play.google.com/store/apps/details?id=net.reboucas.mobile.devices.pegasus)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:49:28 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.sega.sonic.transformed> (referer: https://play.google.com/store/apps/details?id=com.vectorunit.green)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:03 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.jigsaw.puzzlegames.beach> (referer: https://play.google.com/store/apps/details?id=com.jigsaw.puzzlegames.animals)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:04 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.ea.gp.bejeweledskies> (referer: https://play.google.com/store/apps/details?id=com.codejuggler.crisscrossed)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:12 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.appwant.propertyfinder> (referer: https://play.google.com/store/apps/details?id=com.tarot.free)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:13 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.mercdev.astanakz> (referer: https://play.google.com/store/apps/details?id=online.videonaludenie.astana)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:16 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=setas.setamania3> (referer: https://play.google.com/store/apps/details?id=wwk.wikikids.com.kingdomfungi)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:25 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.oki.shapes> (referer: https://play.google.com/store/apps/details?id=com.teachersparadise.numeros)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:28 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.kathrinbrock.EmergencyHero> (referer: https://play.google.com/store/apps/details?id=com.KathrinBrock.SuperTrains2b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:29 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.kathrinbrock.ABCenjoy> (referer: https://play.google.com/store/apps/details?id=com.KathrinBrock.SuperTrains2b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:32 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=asbtech.atr> (referer: https://play.google.com/store/apps/details?id=beba.agua.asb.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:39 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.prismamedia.foodreporter> (referer: https://play.google.com/store/apps/details?id=com.milibris.standalone.app.voici)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:39 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.milibris.prisma.caminteressehistoire> (referer: https://play.google.com/store/apps/details?id=com.milibris.standalone.app.voici)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:40 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.jennis999.snookermathinggames> (referer: https://play.google.com/store/apps/details?id=com.snooker.game)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:50 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.evolve.pitch.holo.hangouts> (referer: https://play.google.com/store/apps/details?id=evolvetheme.android.theme30)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:52 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.djit.apps.quiztube> (referer: https://play.google.com/store/apps/details?id=com.djit.equalizerplusforandroidfree)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:50:56 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.vocento.leon.eurocopa> (referer: https://play.google.com/store/apps/details?id=com.vocento.oferplan.comercio)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:04 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.appsomniacs.da2> (referer: https://play.google.com/store/apps/details?id=com.chadtowns.daxfree)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:08 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=kz.msz.calculator> (referer: https://play.google.com/store/apps/details?id=bg.yordanov88abv.calculator)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:09 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.oki.shapesnew> (referer: https://play.google.com/store/apps/details?id=com.starbox.puzzletoy)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:19 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=org.bouchaibprima.salatokafirsst> (referer: https://play.google.com/store/apps/details?id=com.GoLoOk.Salatawala)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:23 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.hairproductdirectory.blog> (referer: https://play.google.com/store/apps/details?id=md.tictactoe)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:25 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.mahoni.alkitablai> (referer: https://play.google.com/store/apps/details?id=com.warungsatekamu)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:28 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.Reticulum.FamilyMath> (referer: https://play.google.com/store/apps/details?id=com.coolmath)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:29 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.andrewsoft.ct> (referer: https://play.google.com/store/apps/details?id=com.sukamembacaalkitab.sukamembacaalkitab1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:35 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=io.bhekorinc.appid3> (referer: https://play.google.com/store/apps/details?id=io.bhekorinc.appid1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:40 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=appinventor.ai_jauhari_tontowi.moco_cepet> (referer: https://play.google.com/store/apps/details?id=appinventor.ai_jauhari_tontowi.quran_player)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:50 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.wNEETBIOLOGYMONERAQUIZ_3940567> (referer: https://play.google.com/store/apps/details?id=com.wNEETBIOLOGYCH2QUIZ)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 26, in parse_item
+    item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:51:51 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.mizan.map.princesswaaritsya> (referer: https://play.google.com/store/apps/details?id=com.mizan.hafizhpersonal.free)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:01 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.whitesof.soccerfun> (referer: https://play.google.com/store/apps/details?id=com.whitesof.physicsnotes)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:12 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.wagamespub.bubbleshooterclassic3D> (referer: https://play.google.com/store/apps/details?id=com.wagamespub.motogptrafficracer)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:14 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.playtika.caesarscasino> (referer: https://play.google.com/store/apps/details?id=com.doubleugames.DoubleUCasino)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:21 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.Yogi.amanaHeart.AOVXPEDSPSXOLAXH> (referer: https://play.google.com/store/apps/details?id=com.Yogesh.AmanaBageshwaridoten.AOVGIDFOIWWNRZF)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:32 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.xopyo.kutyapp> (referer: https://play.google.com/store/apps/details?id=com.bumpshit.app)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:33 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.visionbanco.mobile> (referer: https://play.google.com/store/apps/details?id=com.visionbanco.mobile.phonegap)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:45 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.metromap.buenos.aires.metro> (referer: https://play.google.com/store/apps/details?id=com.metromap.bucharest.metro)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:46 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.educastudio.marbeljamdanwaktu> (referer: https://play.google.com/store/apps/details?id=com.ClockGamesForKids)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:49 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.lcmobileapp.impossiblequizfr> (referer: https://play.google.com/store/apps/details?id=com.lcmobileapp.escapezombieroom)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:50 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.bandmate.pro> (referer: https://play.google.com/store/apps/details?id=com.bandmate.app)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:52 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=amazing.romantic.Quotes> (referer: https://play.google.com/store/apps/details?id=com.drpu.loveqoutes)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:52:58 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.baygames.parrotfun> (referer: https://play.google.com/store/apps/details?id=com.gonga.parrotshooting)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:06 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.planeth.gstflphhousebanger2> (referer: https://play.google.com/store/apps/details?id=com.planeth.gstflphhardstylebundle1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:08 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.millipore.formulation> (referer: https://play.google.com/store/apps/details?id=de.merck.pte)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:21 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.Almaksoft.WoodCutter> (referer: https://play.google.com/store/apps/details?id=com.Almaksoft.BreakGlassToSoundAlarm)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:21 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.Almaksoft.RobotEscape> (referer: https://play.google.com/store/apps/details?id=com.Almaksoft.BreakGlassToSoundAlarm)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:31 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=fr.turbosa.turbosuite.android.creditmaritime> (referer: https://play.google.com/store/apps/details?id=fr.creditmaritime.cyberplus)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:32 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.bambo.shootgoal> (referer: https://play.google.com/store/apps/details?id=com.pacybits.fut17packopener)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:33 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.blunderer.volleyloisirs6> (referer: https://play.google.com/store/apps/details?id=com.blunderer.materialdesignlibrary.sample)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:33 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.deskbird.MountEverestfree> (referer: https://play.google.com/store/apps/details?id=everest.wallpaper.manypics)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:36 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=jp.konami.pesclubmanager> (referer: https://play.google.com/store/apps/details?id=com.wefut.wefut)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:37 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.natixis.assur360> (referer: https://play.google.com/store/apps/details?id=fr.banquedesavoie.cyberplus)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:42 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=es.laliga.laliga> (referer: https://play.google.com/store/apps/details?id=com.generamobile.headsoccerlaliga)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:47 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.auco.andorid.printer.chd> (referer: https://play.google.com/store/apps/details?id=com.auco.android)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:50 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.animatedwallpaper.BHole98> (referer: https://play.google.com/store/apps/details?id=com.GoldMedal.BlackHole16)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:53:56 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.allislamicapps.surahalwaqiaturkish> (referer: https://play.google.com/store/apps/details?id=com.allislamicapps.surahyaseenmalay)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:03 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.oligon.emergency> (referer: https://play.google.com/store/apps/details?id=com.estacionamiento)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:34 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.quarterpi.islamicwallpapers> (referer: https://play.google.com/store/apps/details?id=com.quarterpi.muslimkidsguide)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:35 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=in.dailytalent.www.historyquiz> (referer: https://play.google.com/store/apps/details?id=in.dailytalent.www.physicsinhindi)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:36 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.ftbpro.patriots> (referer: https://play.google.com/store/apps/details?id=com.ftbpro.chelsea)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 26, in parse_item
+    item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:49 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.thunderbull_entertainment.realracer> (referer: https://play.google.com/store/apps/details?id=com.bouncect.furious.deathracing)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:52 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=app.photoking.gogglesframe> (referer: https://play.google.com/store/apps/details?id=app.photostdio.photoeditor6)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:54 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.hammingcode.DayaSongs> (referer: https://play.google.com/store/apps/details?id=com.hammingcode.HaileeSteinfeldSongs)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:55 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.zuuzuu.carteldesantasongs> (referer: https://play.google.com/store/apps/details?id=com.hammingcode.CarteldeSantaSongs)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:54:59 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.ViksAppsLab.FifthHarmonySongsLyrics> (referer: https://play.google.com/store/apps/details?id=com.stardut.fifthharmonylyrics)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:05 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.raadius.aeolushdapex> (referer: https://play.google.com/store/apps/details?id=com.raadius.aeolushd)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:27 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.CeanDoo.SeriousSanAndreas2> (referer: https://play.google.com/store/apps/details?id=air.com.candyoyo.RosePrincessPregnantCare)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:31 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=dagidagi.studio.toddlercards.animals.full> (referer: https://play.google.com/store/apps/details?id=com.dagidagi.flashlightwidget)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:39 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.eyewind.colorfit.kids> (referer: https://play.google.com/store/apps/details?id=com.eyewind.colorfit.family)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 26, in parse_item
+    item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:40 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.lsc.pictags> (referer: https://play.google.com/store/apps/details?id=com.lsc.filemanager)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:46 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.happy.studio.puzzle.cartoon.dogs> (referer: https://play.google.com/store/apps/details?id=com.skycastleapps.android_funnypuppyjigsaw)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:55:50 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.foosegames.motofurioushd> (referer: https://play.google.com/store/apps/details?id=com.foosegames.megabikeracing3d)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:56:01 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.elrufai> (referer: https://play.google.com/store/apps/details?id=com.duniyarcomputer.ramalanyero2015)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:56:05 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.innovationdream.Jamaica> (referer: https://play.google.com/store/apps/details?id=com.innovationdream.Pakistan)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:56:14 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.saurabhbee.dataandfilestructure> (referer: https://play.google.com/store/apps/details?id=com.saurabh.biology.psychologybook)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 29, in parse_item
+    item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2016-11-13 02:56:31 [scrapy] ERROR: Spider error processing <GET https://play.google.com/store/apps/details?id=com.target.ui> (referer: https://play.google.com/store/apps/details?id=com.wish.merchant)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/Scrapy-1.2.1-py2.7.egg/scrapy/spiders/crawl.py", line 74, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/ren/Python/GooglePlayCrawler/AppCrawler/AppCrawler/spiders/App.py", line 28, in parse_item
+    item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'

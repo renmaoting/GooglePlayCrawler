@@ -25,6 +25,11 @@ MONGODB_PORT = 27017
 MONGODB_DBNAME= 'Jonah'
 MONGODB_DOCNAME= 'Apps'
 
+
+LOG_STDOUT = True 
+LOG_LEVEL = 'ERROR'
+LOG_FILE = 'Apps.log'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -85,7 +90,6 @@ DOWNLOAD_DELAY = 0.25
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
-
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 #HTTPCACHE_ENABLED = True
