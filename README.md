@@ -6,7 +6,9 @@ Use scrapy + mongodb.
 
 usage: scrapy crawl App -o items.json -t json
 
+
 necessary package installation:
+
 1. install Python-pip: sudo apt-get install python-pip
 2. install scrapy: sudo pip install scrapy
 3. install mongodb: sudo apt-get install mongodb
