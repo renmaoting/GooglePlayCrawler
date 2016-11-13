@@ -20,6 +20,11 @@ NEWSPIDER_MODULE = 'AppCrawler.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+MONGODB_HOST= '127.0.0.1'
+MONGODB_PORT = 27017
+MONGODB_DBNAME= 'Jonah'
+MONGODB_DOCNAME= 'Apps'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

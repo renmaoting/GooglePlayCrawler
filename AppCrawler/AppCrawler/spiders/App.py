@@ -21,18 +21,18 @@ class AppSpider(CrawlSpider):
         if response.url.find('reviewId') != -1: return;
         item = AppCrawlerItem()
     
+        item["Name"] = response.xpath('//div[@class="id-app-title"]/text()').extract_first().strip()
         item["URL"] = response.url[0]
-        item["Name"] = response.xpath('//div[@class="id-app-title"]/text()').extract_first()
-        item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract_first()
-        item["Updated"] = response.xpath("//div[@itemprop='datePublished']/text()").extract_first()
-        item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first()
-        item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first()
-        item["Rating"] = response.xpath("//div[@class='score']/text()").extract_first()
-        item["Author"] = response.xpath('//div[@itemprop="author"]/a/span/text()').extract_first()
-        item["Genre"] = response.xpath('//span[@itemprop="genre"]/text()').extract_first()
-        price = response.xpath('//button[@class="price buy id-track-click id-track-impression"]/span[2]/text()').extract_first()
-        if price == u'Install': item["Price"] = 'free' 
-        else: item["Price"] = price.split()[0]
+        item["Downloads"] = response.xpath("//div[@itemprop='numDownloads']/text()").extract_first().strip()
+        item["Updated"] = response.xpath("//div[@itemprop='datePublished']/text()").extract_first().strip()
+        item["Version"] = response.xpath('//div[@itemprop="softwareVersion"]/text()').extract_first().strip()
+        item["Review_number"] = response.xpath("//span[@class='reviews-num']/text()").extract_first().strip()
+        item["Rating"] = float(response.xpath("//div[@class='score']/text()").extract_first().strip())
+        item["Author"] = response.xpath('//div[@itemprop="author"]/a/span/text()').extract_first().strip()
+        item["Genre"] = response.xpath('//span[@itemprop="genre"]/text()').extract_first().strip()
+        price = response.xpath('//button[@class="price buy id-track-click id-track-impression"]/span[2]/text()').extract_first().strip()
+        if price == u'Install': item["Price"] = 0
+        else: item["Price"] =float(price.split()[0][1:])
 
         yield item
 
