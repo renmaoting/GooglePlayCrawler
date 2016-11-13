@@ -4,7 +4,7 @@ App name, company, rating, price, size, type, release time, download number and 
 
 Use scrapy + mongodb.
 
-usage: scrapy crawl App -o items.json -t json
+usage: scrapy crawl App
 
 
 necessary package installation:
